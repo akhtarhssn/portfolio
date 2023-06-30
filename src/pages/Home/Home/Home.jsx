@@ -1,12 +1,13 @@
 import LeftSidebar from "../../../components/LeftSidebar/LeftSidebar";
+import RightSidebar from "../../../components/RightSidebar/RightSidebar";
 
 const Home = () => {
   return (
-    <div className="grid grid-cols-12 py-20">
-      <div className="col-span-3 pr-16 pl-5">
+    <div className="xl:pt-28 xl:flex items-end justify-center">
+      <div className="p-10 xl:p-0">
         <LeftSidebar />
       </div>
-      <div className="col-span-8 mx-auto">
+      <div className="mx-auto">
         <h2>Hello world</h2>
         <h2>Hello world</h2>
         <h2>Hello world</h2>
@@ -76,7 +77,7 @@ const Home = () => {
         <h2>Hello world</h2>
         <h2>Hello world</h2>
       </div>
-      <div className="col-span-1">Right</div>
+      <RightSidebar />
     </div>
   );
 };
