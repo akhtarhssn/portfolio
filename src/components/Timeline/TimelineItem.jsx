@@ -3,7 +3,11 @@ import React from "react";
 const TimelineItem = ({ date, title, subTitle }) => {
   return (
     <div>
-      <p className="pb-5 text-neutral-400 dark:text-neutral-500 group-hover:text-[#28E98C] transition-all duration-500">
+      <p
+        className={`pb-5 text-neutral-400 dark:text-neutral-500 group-hover:text-[#28E98C] transition-all duration-500 ${
+          date ? "block" : "hidden"
+        }`}
+      >
         {date && date}
       </p>
       <h4 className="text-2xl text-neutral-900 dark:text-white mb-1.5">

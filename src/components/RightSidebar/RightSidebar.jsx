@@ -4,7 +4,6 @@ import { BsBriefcase } from "react-icons/bs";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { LiaComment, LiaShapesSolid } from "react-icons/lia";
 import { IoMailOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const RightSidebar = () => {
@@ -43,6 +42,7 @@ const RightSidebar = () => {
           <BsBriefcase size={18} />
         </ScrollLink>
         <ScrollLink
+          to="services"
           smooth={true}
           duration={500}
           className="hover:text-[#28E98C] tooltip tooltip-left"
@@ -52,6 +52,7 @@ const RightSidebar = () => {
           <FaBarsStaggered size={18} />
         </ScrollLink>
         <ScrollLink
+          to="skills"
           smooth={true}
           duration={500}
           className="hover:text-[#28E98C] tooltip tooltip-left"
@@ -61,6 +62,7 @@ const RightSidebar = () => {
           <LiaShapesSolid size={18} />
         </ScrollLink>
         <ScrollLink
+          to="portfolio"
           smooth={true}
           duration={500}
           className="hover:text-[#28E98C] tooltip tooltip-left"
@@ -70,6 +72,7 @@ const RightSidebar = () => {
           <BiGridVertical size={18} />
         </ScrollLink>
         <ScrollLink
+          to="testimonials"
           smooth={true}
           duration={500}
           className="hover:text-[#28E98C] tooltip tooltip-left"
@@ -79,6 +82,7 @@ const RightSidebar = () => {
           <LiaComment size={18} />
         </ScrollLink>
         <ScrollLink
+          to="contact"
           smooth={true}
           duration={500}
           className="hover:text-[#28E98C] tooltip tooltip-left"

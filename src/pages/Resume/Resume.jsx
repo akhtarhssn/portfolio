@@ -29,24 +29,24 @@ const Resume = () => {
           </Timeline>
           <Timeline animation={"fade-left"}>
             <TimelineItem
-              date={"2019 - Present"}
-              title={"Wix Landing Page Designer"}
-              subTitle={"Freelance - Fiverr"}
+              date={"2015 - 2023"}
+              title={"PHP for Beginners | CMS Project"}
+              subTitle={"Udemy - 2016"}
             />
             <TimelineItem
-              title={"Wordpress Website Designer"}
-              subTitle={"Freelance - Fiverr"}
+              title={"Zero to Hero Web Developer"}
+              subTitle={"Udemy - 2018"}
+            />
+            <TimelineItem
+              title={"Complete Web-Development Course"}
+              subTitle={"Programming Hero - 2023"}
             />
           </Timeline>
           <Timeline animation={"fade-right"}>
             <TimelineItem
-              date={"2019 - Present"}
-              title={"Wix Landing Page Designer"}
-              subTitle={"Freelance - Fiverr"}
-            />
-            <TimelineItem
-              title={"Wordpress Website Designer"}
-              subTitle={"Freelance - Fiverr"}
+              date={"2017 - Present"}
+              title={"Bachelor of Business Administration"}
+              subTitle={"Shahjalal Govt. College"}
             />
           </Timeline>
         </SectionContainer>
