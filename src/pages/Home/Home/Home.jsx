@@ -1,82 +1,16 @@
 import LeftSidebar from "../../../components/LeftSidebar/LeftSidebar";
 import RightSidebar from "../../../components/RightSidebar/RightSidebar";
+import Hero from "../Hero/Hero";
 
 const Home = () => {
   return (
-    <div className="xl:pt-28 xl:flex items-end justify-center">
-      <div className="p-10 xl:p-0">
+    <div className="xl:flex items-end justify-center">
+      <div className="p-5 xl:p-0 z-10">
         <LeftSidebar />
       </div>
-      <div className="mx-auto">
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-      </div>
+      <main className="flex-grow">
+        <Hero />
+      </main>
       <RightSidebar />
     </div>
   );

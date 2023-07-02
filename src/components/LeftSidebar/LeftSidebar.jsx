@@ -6,24 +6,24 @@ import { HiMiniBars2 } from "react-icons/hi2";
 
 const LeftSidebar = () => {
   return (
-    <div className="flex justify-between gap-10">
+    <div className="xl:flex justify-between gap-10 ">
       {/* Sidebar Card */}
-      <div className="max-w-[767px] mx-auto p-12 border border-gray-600 rounded-[30px] text-white xl:fixed xl:top-1/2 xl:transform xl:-translate-y-1/2 xl:left-6 flex-grow">
+      <div className="max-w-[767px] mx-auto px-5 py-6 sm:p-7 md:p-12 border border-gray-600 rounded-[30px] text-white xl:fixed xl:top-1/2 xl:transform xl:-translate-y-1/2 xl:left-6 flex-grow mt-20 xl:mt-0">
         <div className="flex items-center justify-between mb-7">
-          <h1 className="text-4xl font-bold">Wixden</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Wixden</h1>
           <p className="text-right text-sm ">
             Web Designer <br /> & Developer
           </p>
         </div>
         <div className="mb-12 flex justify-center">
           <img
-            src="https://drake-react.vercel.app/assets/images/me.jpg"
+            src="https://i.ibb.co/n6FTQDr/Logo-Dark.jpg"
             alt="Portfolio User image"
-            className="rounded-[30px] w-[300px]"
+            className="rounded-[30px] xl:h-[250px] xl:w-[300px] w-full object-cover"
           />
         </div>
         <div className="text-center">
-          <div className="text-2xl mb-8">
+          <div className="text-lg sm:text-xl md:text-2xl mb-8">
             <p className="hover:text-[#28E98C]">
               <a href="mailto:akhtarhossain97@gmail.com">hello@akhtar.com</a>
             </p>
@@ -66,9 +66,9 @@ const LeftSidebar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className="xl:absolute right-6 top-20">
-        <button className="border-2 border-gray-600 rounded-full hover:border-[#28E98C] hover:text-[#28E98C] transition p-5">
-          <HiMiniBars2 />
+      <div className="absolute xl:right-6 xl:top-20 top-5">
+        <button className="border-2 border-gray-600 rounded-full hover:border-[#28E98C] hover:text-[#28E98C] transition p-3 text-white">
+          <HiMiniBars2 size={25} />
         </button>
       </div>
     </div>
