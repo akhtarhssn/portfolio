@@ -1,6 +1,6 @@
 // { Icon, name, title, fontSize }
 
-const SectionHeader = ({ name, Icon, title }) => {
+const HeroHeader = ({ name, Icon, title }) => {
   return (
     <div>
       {/* Section Name */}
@@ -14,7 +14,7 @@ const SectionHeader = ({ name, Icon, title }) => {
       </div>
       {/* Title */}
       <h2
-        className={`md:text-[48px]  text-[38px] font-inter font-light text-white my-8`}
+        className={`md:text-[78px]  sm:text-[58px] text-5xl font-inter font-light leading-[90px] text-white my-12`}
         data-aos="fade-up"
         data-aos-duration="1100"
       >
@@ -24,4 +24,4 @@ const SectionHeader = ({ name, Icon, title }) => {
   );
 };
 
-export default SectionHeader;
+export default HeroHeader;
