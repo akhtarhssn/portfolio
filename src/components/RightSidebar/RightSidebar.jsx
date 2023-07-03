@@ -64,7 +64,7 @@ const RightSidebar = () => {
         <ScrollLink
           to="portfolio"
           smooth={true}
-          duration={500}
+          duration={1000}
           className="hover:text-[#28E98C] tooltip tooltip-left"
           type="button"
           data-tip="Portfolio"
@@ -74,7 +74,7 @@ const RightSidebar = () => {
         <ScrollLink
           to="testimonials"
           smooth={true}
-          duration={500}
+          duration={1000}
           className="hover:text-[#28E98C] tooltip tooltip-left"
           type="button"
           data-tip="Testimonials"
@@ -84,7 +84,7 @@ const RightSidebar = () => {
         <ScrollLink
           to="contact"
           smooth={true}
-          duration={500}
+          duration={1000}
           className="hover:text-[#28E98C] tooltip tooltip-left"
           type="button"
           data-tip="Contact"

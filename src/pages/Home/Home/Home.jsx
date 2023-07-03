@@ -1,8 +1,10 @@
 import LeftSidebar from "../../../components/LeftSidebar/LeftSidebar";
 import RightSidebar from "../../../components/RightSidebar/RightSidebar";
 import About from "../../About/About";
+import Portfolio from "../../Portfolio/Portfolio";
 import Resume from "../../Resume/Resume";
 import Services from "../../Services/Services";
+import Skills from "../../Skills/Skills";
 import Hero from "../Hero/Hero";
 
 const Home = () => {
@@ -16,6 +18,8 @@ const Home = () => {
         <About />
         <Resume />
         <Services />
+        <Skills />
+        <Portfolio />
       </main>
       <RightSidebar />
     </div>

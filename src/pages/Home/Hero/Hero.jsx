@@ -3,7 +3,7 @@ import SectionContainer from "../../../components/Container/SectionContainer";
 import Container from "../../../components/Container/Container";
 import { ImArrowDown2 } from "react-icons/im";
 import { Link } from "react-router-dom";
-import { AiOutlineHome as Icon } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
 import HeroHeader from "../../../components/HeroHeader/HeroHeader";
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
       <Container>
         {/* margin to right */}
         <SectionContainer>
-          <HeroHeader title={title} name={"welcome"} Icon={Icon} />
+          <HeroHeader title={title} name={"welcome"} Icon={AiOutlineHome} />
           <div className="xl:flex justify-between">
             <p
               className="text-neutral-400 font-inter mb-8 xl:mb-0"
