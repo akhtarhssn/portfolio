@@ -43,21 +43,23 @@ const Hero = () => {
               <ImArrowDown2 className="absolute text-white" size={30} />
             </Link>
           </div>
-          <div className="flex items-center justify-between mt-14 text-neutral-400 flex-wrap space-y-7 xl:space-y-0">
+          <div className="flex justify-between mt-14 text-neutral-400 flex-wrap space-y-7 xl:space-y-0">
             <div
               className="w-56"
               data-aos="fade-right"
               data-aos-duration="1100"
             >
-              <h1 className="text-3xl text-[#28E98C] mb-3">Pixel Perfect</h1>
+              <h1 className="text-[28px] text-[#28E98C] mb-3">Pixel Perfect</h1>
               <p>Unleash Your Vision, Perfected Pixel by Pixel</p>
             </div>
             <div className="w-56" data-aos="fade-up" data-aos-duration="1100">
-              <h1 className="text-3xl text-[#28E98C] mb-3">High Quality</h1>
+              <h1 className="text-[28px] text-[#28E98C] mb-3">High Quality</h1>
               <p>Exquisite Craftsmanship, Uncompromising Quality</p>
             </div>
             <div className="w-56" data-aos="fade-left" data-aos-duration="1100">
-              <h1 className="text-3xl text-[#28E98C] mb-3">User Experience</h1>
+              <h1 className="text-[28px] text-[#28E98C] mb-3">
+                User Experience
+              </h1>
               <p>Unlocking Seamless Experiences, Empowering Users</p>
             </div>
           </div>

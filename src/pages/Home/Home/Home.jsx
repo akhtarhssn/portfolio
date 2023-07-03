@@ -2,6 +2,7 @@ import LeftSidebar from "../../../components/LeftSidebar/LeftSidebar";
 import RightSidebar from "../../../components/RightSidebar/RightSidebar";
 import About from "../../About/About";
 import Resume from "../../Resume/Resume";
+import Services from "../../Services/Services";
 import Hero from "../Hero/Hero";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         <Hero />
         <About />
         <Resume />
+        <Services />
       </main>
       <RightSidebar />
     </div>

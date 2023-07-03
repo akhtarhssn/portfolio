@@ -10,7 +10,7 @@ const TimelineItem = ({ date, title, subTitle }) => {
       >
         {date && date}
       </p>
-      <h4 className="text-2xl text-neutral-900 dark:text-white mb-1.5">
+      <h4 className="text-lg lg:text-2xl text-neutral-900 dark:text-white mb-1.5">
         {title ? title : "No Title Found"}
       </h4>
       <p className="mb-5 text-[13px] font-normal text-neutral-500 dark:text-neutral-400">

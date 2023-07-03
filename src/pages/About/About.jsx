@@ -18,7 +18,7 @@ const About = () => {
         <SectionContainer>
           <SectionHeader title={title} name={"about"} Icon={Icon} />
           <p
-            className="text-neutral-400 font-inter mb-8 xl:mb-0 max-w-[610px]"
+            className="text-neutral-400 font-inter mb-8 xl:mb-0 max-w-[320px] lg:max-w-[610px]"
             data-aos="fade-up"
             data-aos-duration="1100"
           >

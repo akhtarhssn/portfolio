@@ -11,7 +11,7 @@ const Resume = () => {
     </>
   );
   return (
-    <section className="py-16" id="resume">
+    <section className="py-[90px] overflow-hidden relative" id="resume">
       <Container>
         {/* margin to right */}
         <SectionContainer>
