@@ -3,6 +3,7 @@ import SectionContainer from "../../components/Container/SectionContainer";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import { BiGridVertical } from "react-icons/bi";
 import Container from "../../components/Container/Container";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 const Portfolio = () => {
   const title = (
@@ -21,6 +22,7 @@ const Portfolio = () => {
             name={"portfolio"}
             Icon={BiGridVertical}
           />
+          <ProjectCard />
         </SectionContainer>
       </Container>
     </section>
