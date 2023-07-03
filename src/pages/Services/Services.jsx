@@ -3,7 +3,7 @@ import Container from "../../components/Container/Container";
 import SectionContainer from "../../components/Container/SectionContainer";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import ServicesCard from "../../components/ServicesCard/ServicesCard";
-import { services } from "./servicesData";
+import { services } from "../../../public/data";
 
 const Services = () => {
   const title = (

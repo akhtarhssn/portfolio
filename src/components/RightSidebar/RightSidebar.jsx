@@ -14,7 +14,7 @@ const RightSidebar = () => {
           to="home"
           smooth={true}
           duration={1000}
-          className="hover:text-[#28E98C] tooltip tooltip-left"
+          className="hover:text-[#28E98C] tooltip tooltip-left cursor-pointer"
           type="button"
           data-tip="Home"
         >
@@ -25,7 +25,7 @@ const RightSidebar = () => {
           to="about"
           smooth={true}
           duration={1000}
-          className="hover:text-[#28E98C] tooltip tooltip-left"
+          className="hover:text-[#28E98C] tooltip tooltip-left cursor-pointer"
           type="button"
           data-tip="About"
         >
@@ -35,7 +35,7 @@ const RightSidebar = () => {
           to="resume"
           smooth={true}
           duration={1000}
-          className="hover:text-[#28E98C] tooltip tooltip-left"
+          className="hover:text-[#28E98C] tooltip tooltip-left cursor-pointer"
           type="button"
           data-tip="Resume"
         >
@@ -45,7 +45,7 @@ const RightSidebar = () => {
           to="services"
           smooth={true}
           duration={1000}
-          className="hover:text-[#28E98C] tooltip tooltip-left"
+          className="hover:text-[#28E98C] tooltip tooltip-left cursor-pointer"
           type="button"
           data-tip="Services"
         >
@@ -55,7 +55,7 @@ const RightSidebar = () => {
           to="skills"
           smooth={true}
           duration={1000}
-          className="hover:text-[#28E98C] tooltip tooltip-left"
+          className="hover:text-[#28E98C] tooltip tooltip-left cursor-pointer"
           type="button"
           data-tip="Skills"
         >
@@ -65,7 +65,7 @@ const RightSidebar = () => {
           to="portfolio"
           smooth={true}
           duration={1000}
-          className="hover:text-[#28E98C] tooltip tooltip-left"
+          className="hover:text-[#28E98C] tooltip tooltip-left cursor-pointer"
           type="button"
           data-tip="Portfolio"
         >
@@ -75,7 +75,7 @@ const RightSidebar = () => {
           to="testimonials"
           smooth={true}
           duration={1000}
-          className="hover:text-[#28E98C] tooltip tooltip-left"
+          className="hover:text-[#28E98C] tooltip tooltip-left cursor-pointer"
           type="button"
           data-tip="Testimonials"
         >
@@ -85,7 +85,7 @@ const RightSidebar = () => {
           to="contact"
           smooth={true}
           duration={1000}
-          className="hover:text-[#28E98C] tooltip tooltip-left"
+          className="hover:text-[#28E98C] tooltip tooltip-left cursor-pointer"
           type="button"
           data-tip="Contact"
         >
