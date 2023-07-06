@@ -2,12 +2,11 @@ import { Link } from "react-router-dom";
 import { BsDribbble, BsGithub, BsTwitter } from "react-icons/bs";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
-import { HiMiniBars2 } from "react-icons/hi2";
 import { Link as ScrollLink } from "react-scroll";
 
 const LeftSidebar = () => {
   return (
-    <div className="xl:flex justify-between gap-10 ">
+    <div className="gl:flex justify-between gap-10 ">
       {/* Sidebar Card */}
       <div className="max-w-[767px] mx-auto px-5 py-6 sm:p-7 md:p-12 border border-gray-600 rounded-[30px] text-white xl:fixed xl:top-1/2 xl:transform xl:-translate-y-1/2 xl:left-6 flex-grow mt-20 xl:mt-0">
         <div className="flex items-center justify-between mb-7">
@@ -69,13 +68,6 @@ const LeftSidebar = () => {
             </ScrollLink>
           </div>
         </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <div className="absolute xl:right-6 xl:top-20 top-5">
-        <button className="border-2 border-gray-600 rounded-full hover:border-[#28E98C] hover:text-[#28E98C] transition p-3 text-white">
-          <HiMiniBars2 size={25} />
-        </button>
       </div>
     </div>
   );

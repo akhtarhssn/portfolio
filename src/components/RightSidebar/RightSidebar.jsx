@@ -71,7 +71,8 @@ const RightSidebar = () => {
         >
           <BiGridVertical size={18} />
         </ScrollLink>
-        <ScrollLink
+        {/* Todo: Add testimonials and pricing */}
+        {/* <ScrollLink
           to="testimonials"
           smooth={true}
           duration={1000}
@@ -80,7 +81,7 @@ const RightSidebar = () => {
           data-tip="Testimonials"
         >
           <LiaComment size={18} />
-        </ScrollLink>
+        </ScrollLink> */}
         <ScrollLink
           to="contact"
           smooth={true}

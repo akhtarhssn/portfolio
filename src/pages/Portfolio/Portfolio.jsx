@@ -4,6 +4,8 @@ import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import { BiGridVertical } from "react-icons/bi";
 import Container from "../../components/Container/Container";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import { projects } from "../../../public/data";
+import FeaturedProject from "./FeaturedProject";
 
 const Portfolio = () => {
   const title = (
@@ -22,7 +24,16 @@ const Portfolio = () => {
             name={"portfolio"}
             Icon={BiGridVertical}
           />
-          <ProjectCard />
+          <FeaturedProject />
+          <div
+            className="grid md:grid-cols-2 gap-8"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            {projects.map((project) => (
+              <ProjectCard key={project?._id} project={project} />
+            ))}
+          </div>
         </SectionContainer>
       </Container>
     </section>

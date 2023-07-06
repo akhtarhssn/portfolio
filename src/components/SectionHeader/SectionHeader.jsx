@@ -9,7 +9,7 @@ const SectionHeader = ({ name, Icon, title }) => {
         data-aos="fade-up"
         data-aos-duration="1100"
       >
-        <Icon />
+        <Icon className="text-[#28E98C]" />
         <p className="uppercase font-inter text-xs">{name}</p>
       </div>
       {/* Title */}

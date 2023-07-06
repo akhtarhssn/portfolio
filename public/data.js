@@ -69,3 +69,44 @@ export const skills = [
     animation: "fade-left",
   },
 ];
+
+export const projects = [
+  {
+    _id: 1,
+    // thumbnail: "https://i.ibb.co/h1J4TvW/kiddie-corner.png",
+    thumbnail: "https://i.ibb.co/KrV5P2R/toy-store.png",
+    projectUrl: "https://kiddie-corner-client.firebaseapp.com/",
+    websiteName: "Kiddie Corner",
+    technologies: ["React", "Express.js", "MongoDB"],
+    title: "Kiddie Corner - Toy Marketplace website",
+    animation: "fade-down-right",
+  },
+  {
+    _id: 2,
+    // thumbnail: "https://i.ibb.co/rpKCgn4/chef-recipe-hunter-short.png",
+    thumbnail: "https://i.ibb.co/HHqcsZd/chef-recipe-hunter.png",
+    projectUrl: "https://chef-recipe-hunter-b7a10.web.app/",
+    websiteName: "Chef-Recipe Hunter",
+    technologies: ["React", "Express.js"],
+    title: "Chef Recipe - Popular Chef Recipe Website",
+    animation: "fade-down-left",
+  },
+  {
+    _id: 3,
+    thumbnail: "https://i.ibb.co/Kh0Bwhh/aircnc-short.png",
+    projectUrl: "https://aircnc-part-01.web.app/",
+    websiteName: "Air CNC",
+    technologies: ["React", "Express.js", "MongoDB"],
+    title: "Air CNC - Online Booking Website",
+    animation: "fade-up-right",
+  },
+  {
+    _id: 5,
+    thumbnail: "https://i.ibb.co/GQWK0Pz/dream-job.png",
+    projectUrl: "https://dreamjob-a9.netlify.app/",
+    websiteName: "Dream Job",
+    technologies: ["React", "Express.js", "MongoDB"],
+    title: "Dream Job - Online Job Website",
+    animation: "fade-up-left",
+  },
+];
