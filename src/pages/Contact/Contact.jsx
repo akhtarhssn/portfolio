@@ -5,6 +5,8 @@ import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import { IoMailOutline } from "react-icons/io5";
 import { GrSend } from "react-icons/gr";
 import { Link } from "react-router-dom";
+import { ScrollLink } from "react-scroll";
+import { AiOutlineMail } from "react-icons/ai";
 const Contact = () => {
   const title = (
     <>
@@ -136,11 +138,24 @@ const Contact = () => {
                   placeholder="Write your thoughts here..."
                 ></textarea>
               </div>
-              <button type="submit">
-                <Link className="w-full md:w-[250px] flex items-center gap-2 bg-[#28E98C] rounded-full py-3 justify-center text-black text-lg hover:bg-transparent hover:border-[#28E98C] border-[#28E98C] border-2 hover:text-[#28E98C]  transition-colors duration-300">
+
+              <div>
+                <ScrollLink
+                  to="contact"
+                  smooth={true}
+                  duration={1000}
+                  className="flex items-center gap-2 bg-[#28E98C] rounded-full py-3 justify-center text-black text-lg hover:bg-transparent hover:border-[#28E98C] border-[#28E98C] border-2 hover:text-[#28E98C]  transition-colors duration-300"
+                >
                   {" "}
-                  <GrSend /> <span className="uppercase">Send Message</span>
-                </Link>
+                  <AiOutlineMail /> <button>HIRE ME!</button>
+                </ScrollLink>
+              </div>
+
+              <button
+                type="submit"
+                className="w-full md:w-[250px] bg-[#28E98C] rounded-full py-3 text-black text-lg hover:bg-transparent hover:border-[#28E98C] border-[#28E98C] border-2 hover:text-[#28E98C] transition-colors duration-300 flex items-center gap-2 justify-center"
+              >
+                <GrSend /> <span className="uppercase">Send Message</span>
               </button>
             </form>
           </div>

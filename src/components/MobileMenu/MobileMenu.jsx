@@ -12,8 +12,8 @@ const MobileMenu = ({ openMenu, toggleMenu }) => {
   return (
     <div
       className={`${
-        openMenu ? "right-0" : "-right-[350px] w-0"
-      } transition-all duration-700 w-[75%] text-sm lg:text-base xl:max-w-[340px] fixed bg-[#191919] top-0 h-screen z-30`}
+        openMenu ? "right-0 w-[75%] md:w-[25%]" : "-right-[350px] w-0"
+      } transition-all duration-700  text-sm lg:text-base xl:max-w-[340px] fixed bg-[#191919] top-0 h-screen z-30`}
     >
       <div className="flex flex-col w-[70%] lg:w-[60%] mx-auto gap-5 px-4 py-7 text-gray-400">
         <div

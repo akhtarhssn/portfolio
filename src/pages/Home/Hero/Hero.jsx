@@ -3,6 +3,7 @@ import SectionContainer from "../../../components/Container/SectionContainer";
 import Container from "../../../components/Container/Container";
 import { ImArrowDown2 } from "react-icons/im";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { AiOutlineHome } from "react-icons/ai";
 import HeroHeader from "../../../components/HeroHeader/HeroHeader";
 
@@ -10,7 +11,7 @@ const Hero = () => {
   const title = (
     <>
       Embrace Creative Excellence with{" "}
-      <span className="text-[#28E98C]">Wixden</span>
+      <span className="text-[#28E98C]">Akhtar</span>
     </>
   );
 
@@ -30,8 +31,11 @@ const Hero = () => {
               <br />
               Just simple like that!
             </p>
-            <Link
-              className="xl:ml-auto border border-gray-600 rounded-full w-44 h-44 p-4 flex justify-center items-center mr-4"
+            <ScrollLink
+              to="portfolio"
+              smooth={true}
+              duration={1000}
+              className="xl:ml-auto border border-gray-600 rounded-full w-44 h-44 p-4 flex justify-center items-center mr-4 cursor-pointer"
               data-aos="fade-up"
               data-aos-duration="1100"
             >
@@ -41,14 +45,10 @@ const Hero = () => {
                 className="w-full align-middle animate-spin-slow"
               />
               <ImArrowDown2 className="absolute text-white" size={30} />
-            </Link>
+            </ScrollLink>
           </div>
-          <div className="flex justify-between mt-14 text-neutral-400 flex-wrap space-y-7 xl:space-y-0">
-            <div
-              className="w-56"
-              data-aos="fade-right"
-              data-aos-duration="1100"
-            >
+          <div className="flex justify-between items-start mt-14 text-neutral-400 flex-wrap gap-7">
+            <div className="w-56" data-aos="fade-up" data-aos-duration="1100">
               <h1 className="text-[28px] text-[#28E98C] mb-3">Pixel Perfect</h1>
               <p>Unleash Your Vision, Perfected Pixel by Pixel</p>
             </div>
@@ -56,7 +56,7 @@ const Hero = () => {
               <h1 className="text-[28px] text-[#28E98C] mb-3">High Quality</h1>
               <p>Exquisite Craftsmanship, Uncompromising Quality</p>
             </div>
-            <div className="w-56" data-aos="fade-left" data-aos-duration="1100">
+            <div className="w-56" data-aos="fade-up" data-aos-duration="1100">
               <h1 className="text-[28px] text-[#28E98C] mb-3">
                 User Experience
               </h1>

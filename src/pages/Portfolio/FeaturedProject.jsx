@@ -15,7 +15,7 @@ const FeaturedProject = () => {
         >
           <img
             className="rounded-3xl object-cover object-top max-h-[400px] w-full"
-            src="https://i.ibb.co/pJrnfyG/soul-sync.png"
+            src="https://i.ibb.co/RY3MFXw/soul-sync-short.png"
             alt="Kiddie Corner website project image"
           />
           {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-3xl"></div> */}

@@ -8,31 +8,31 @@ const LeftSidebar = () => {
   return (
     <div className="gl:flex justify-between gap-10 ">
       {/* Sidebar Card */}
-      <div className="max-w-[767px] mx-auto px-5 py-6 sm:p-7 md:p-12 border border-gray-600 rounded-[30px] text-white xl:fixed xl:top-1/2 xl:transform xl:-translate-y-1/2 xl:left-6 flex-grow mt-20 xl:mt-0">
+      <div className="max-w-[767px] mx-auto px-5 py-6 sm:p-7 md:p-8 border border-gray-600 rounded-[30px] text-white xl:fixed xl:top-1/2 xl:transform xl:-translate-y-1/2 xl:left-6 flex-grow mt-20 xl:mt-0">
         <div className="flex items-center justify-between mb-7">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Wixden</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Akhtar</h1>
           <p className="text-right text-sm ">
             Web Designer <br /> & Developer
           </p>
         </div>
         <div className="mb-12 flex justify-center">
           <img
-            src="https://i.ibb.co/n6FTQDr/Logo-Dark.jpg"
+            src="https://i.ibb.co/dMR0BZH/Whats-App-Image-2023-06-23-at-00-36-33.jpg"
             alt="Portfolio User image"
-            className="rounded-[30px] xl:h-[250px] xl:w-[300px] w-full object-cover"
+            className="rounded-[30px] h-[550px] xl:h-[220px] xl:w-[300px] w-full object-cover xl:object-center"
           />
         </div>
         <div className="text-center">
-          <div className="text-lg sm:text-xl md:text-2xl mb-8">
+          <div className="sm:text-xl mb-8">
             <p className="hover:text-[#28E98C]">
               <a href="mailto:akhtarhossain97@gmail.com">hello@akhtar.com</a>
             </p>
             <p>Live in Sylhet, Bangladesh</p>
           </div>
           {/*  copyright */}
-          <p className="text-sm text-gray-400 mb-8">
+          {/* <p className="text-sm text-gray-400 mb-8">
             &copy; 2023 Akhtar. All Rights Reserved
-          </p>
+          </p> */}
           {/* Social */}
           <div className="flex gap-2 items-center text-gray-400 mb-[30px] justify-center">
             <Link>

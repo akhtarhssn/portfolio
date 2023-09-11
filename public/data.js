@@ -73,8 +73,7 @@ export const skills = [
 export const projects = [
   {
     _id: 1,
-    // thumbnail: "https://i.ibb.co/h1J4TvW/kiddie-corner.png",
-    thumbnail: "https://i.ibb.co/KrV5P2R/toy-store.png",
+    thumbnail: "https://i.ibb.co/h1J4TvW/kiddie-corner.png",
     projectUrl: "https://kiddie-corner-client.firebaseapp.com/",
     websiteName: "Kiddie Corner",
     technologies: ["React", "Express.js", "MongoDB"],
@@ -83,8 +82,7 @@ export const projects = [
   },
   {
     _id: 2,
-    // thumbnail: "https://i.ibb.co/rpKCgn4/chef-recipe-hunter-short.png",
-    thumbnail: "https://i.ibb.co/HHqcsZd/chef-recipe-hunter.png",
+    thumbnail: "https://i.ibb.co/rpKCgn4/chef-recipe-hunter-short.png",
     projectUrl: "https://chef-recipe-hunter-b7a10.web.app/",
     websiteName: "Chef-Recipe Hunter",
     technologies: ["React", "Express.js"],
@@ -102,7 +100,7 @@ export const projects = [
   },
   {
     _id: 5,
-    thumbnail: "https://i.ibb.co/GQWK0Pz/dream-job.png",
+    thumbnail: "https://i.ibb.co/JKWshW3/dream-job-short.png",
     projectUrl: "https://dreamjob-a9.netlify.app/",
     websiteName: "Dream Job",
     technologies: ["React", "Express.js", "MongoDB"],
