@@ -1,13 +1,35 @@
-import React from "react";
+import React, { useRef } from "react";
 import Container from "../../components/Container/Container";
 import SectionContainer from "../../components/Container/SectionContainer";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import { IoMailOutline } from "react-icons/io5";
 import { GrSend } from "react-icons/gr";
-import { Link } from "react-router-dom";
 import { ScrollLink } from "react-scroll";
 import { AiOutlineMail } from "react-icons/ai";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_dzzsmjc",
+        "template_zuekuc9",
+        form.current,
+        "zYW_IYqNLKr_VokYL"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   const title = (
     <>
       Let's Work <span className="text-[#28E98C]">Together</span>
@@ -21,12 +43,12 @@ const Contact = () => {
           <SectionHeader title={title} name={"contact"} Icon={IoMailOutline} />
           {/* Contact Form */}
           <div className="py-16 text-white">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="flex items-center gap-5 mb-8">
                 <div className="relative z-0 w-full mb-6 group">
                   <input
                     type="text"
-                    name="name"
+                    name="from_name"
                     id="floating_name"
                     className="block py-2.5 px-0 w-full text-sm text-neutral-400 bg-transparent border-0 border-b border-neutral-600 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
@@ -43,7 +65,7 @@ const Contact = () => {
                 <div className="relative z-0 w-full mb-6 group">
                   <input
                     type="email"
-                    name="floating_email"
+                    name="from_email"
                     id="floating_email"
                     className="block py-2.5 px-0 w-full text-sm text-neutral-400 bg-transparent border-0 border-b border-neutral-600 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
@@ -97,7 +119,7 @@ const Contact = () => {
               <div className="relative z-0 w-full mb-8 group">
                 <input
                   type="text"
-                  name="repeat_password"
+                  name="budget"
                   id="floating_repeat_password"
                   className="block py-2.5 px-0 w-full text-sm text-neutral-400 bg-transparent border-0 border-b border-neutral-600 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
@@ -111,7 +133,7 @@ const Contact = () => {
                   <span className="text-xs text-neutral-400">(optional)</span>
                 </label>
               </div>
-              <div className="mb-8">
+              {/* <div className="mb-8">
                 <label
                   className="block mb-2 text-sm font-medium"
                   htmlFor="file_input"
@@ -119,11 +141,12 @@ const Contact = () => {
                   Add an Attachment
                 </label>
                 <input
+                  name="file"
                   className="block w-full text-sm text-neutral-400 border-b border-neutral-600 cursor-pointer bg-transparent"
                   id="file_input"
                   type="file"
                 />
-              </div>
+              </div> */}
               <div className="mb-8">
                 <label
                   htmlFor="message"
@@ -133,6 +156,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="4"
                   className="block py-2.5 px-0 w-full text-sm text-neutral-400 bg-transparent border-0 border-b border-neutral-600 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder="Write your thoughts here..."
