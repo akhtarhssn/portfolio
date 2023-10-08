@@ -163,17 +163,12 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <div>
-                <ScrollLink
-                  to="contact"
-                  smooth={true}
-                  duration={1000}
-                  className="flex items-center gap-2 bg-[#28E98C] rounded-full py-3 justify-center text-black text-lg hover:bg-transparent hover:border-[#28E98C] border-[#28E98C] border-2 hover:text-[#28E98C]  transition-colors duration-300"
-                >
+              {/* <ScrollLink to="contact" smooth={true} duration={1000}>
+                <div className="flex items-center gap-2 bg-[#28E98C] rounded-full py-3 justify-center text-black text-lg hover:bg-transparent hover:border-[#28E98C] border-[#28E98C] border-2 hover:text-[#28E98C]  transition-colors duration-300">
                   {" "}
                   <AiOutlineMail /> <button>HIRE ME!</button>
-                </ScrollLink>
-              </div>
+                </div>
+              </ScrollLink> */}
 
               <button
                 type="submit"

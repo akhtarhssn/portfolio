@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { BsDribbble, BsGithub, BsTwitter } from "react-icons/bs";
-import { BiLogoLinkedin } from "react-icons/bi";
+import { BiLogoDevTo, BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
+import { FaFacebookF } from "react-icons/fa6";
+import { LiaFacebookF } from "react-icons/lia";
 
 const LeftSidebar = () => {
   return (
@@ -35,24 +37,30 @@ const LeftSidebar = () => {
           </p> */}
           {/* Social */}
           <div className="flex gap-2 items-center text-gray-400 mb-[30px] justify-center">
-            <Link>
+            <Link
+              to="https://www.facebook.com/mohammedakhtar07/"
+              target="_bland"
+            >
               <button className="border-2 border-gray-600 rounded-full hover:border-[#28E98C] hover:text-[#28E98C] transition p-3">
-                <BsTwitter size={20} />
+                <LiaFacebookF size={20} />
               </button>
             </Link>
-            <Link>
+            <Link
+              to="https://www.linkedin.com/in/mohammedakhtar7/"
+              target="_bland"
+            >
               <button className="border-2 border-gray-600 rounded-full hover:border-[#28E98C] hover:text-[#28E98C] transition p-3">
                 <BiLogoLinkedin size={20} />
               </button>
             </Link>
-            <Link>
+            <Link to="https://github.com/Wixden" target="_bland">
               <button className="border-2 border-gray-600 rounded-full hover:border-[#28E98C] hover:text-[#28E98C] transition p-3">
                 <BsGithub size={20} />
               </button>
             </Link>
-            <Link>
+            <Link to="https://dev.to/wixden" target="_bland">
               <button className="border-2 border-gray-600 rounded-full hover:border-[#28E98C] hover:text-[#28E98C] transition p-3">
-                <BsDribbble size={20} />
+                <BiLogoDevTo size={20} />
               </button>
             </Link>
           </div>
