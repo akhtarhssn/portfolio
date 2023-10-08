@@ -1,17 +1,21 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Container from "../../components/Container/Container";
 import SectionContainer from "../../components/Container/SectionContainer";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import { IoMailOutline } from "react-icons/io5";
 import { GrSend } from "react-icons/gr";
-import { ScrollLink } from "react-scroll";
-import { AiOutlineMail } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
+import { TbFidgetSpinner } from "react-icons/tb";
+
 const Contact = () => {
   const form = useRef();
 
+  const [loading, setLoading] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     emailjs
       .sendForm(
@@ -21,11 +25,13 @@ const Contact = () => {
         "zYW_IYqNLKr_VokYL"
       )
       .then(
-        (result) => {
-          console.log(result);
+        () => {
+          setLoading(false);
+          toast.success("Mail Sent Successfully");
         },
         (error) => {
-          console.log(error.text);
+          toast.warning(error.message);
+          console.log(error);
         }
       );
   };
@@ -49,7 +55,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="from_name"
-                    id="floating_name"
+                    id="name"
                     className="block py-2.5 px-0 w-full text-sm text-neutral-400 bg-transparent border-0 border-b border-neutral-600 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     required
@@ -66,14 +72,14 @@ const Contact = () => {
                   <input
                     type="email"
                     name="from_email"
-                    id="floating_email"
+                    id="email"
                     className="block py-2.5 px-0 w-full text-sm text-neutral-400 bg-transparent border-0 border-b border-neutral-600 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     required
                     autoComplete="off"
                   />
                   <label
-                    htmlFor="floating_email"
+                    htmlFor="email"
                     className="peer-focus:font-medium absolute text-sm  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
                     Email address <span className="text-red-600">*</span>
@@ -85,7 +91,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="phone"
-                    id="floating_password"
+                    id="phone"
                     className="block py-2.5 px-0 w-full text-sm text-neutral-400 bg-transparent border-0 border-b border-neutral-600 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     required
@@ -103,7 +109,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="subject"
-                    id="floating_password"
+                    id="subject"
                     className="block py-2.5 px-0 w-full text-sm text-neutral-400 bg-transparent border-0 border-b border-neutral-600 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     required
@@ -120,13 +126,13 @@ const Contact = () => {
                 <input
                   type="text"
                   name="budget"
-                  id="floating_repeat_password"
+                  id="budget"
                   className="block py-2.5 px-0 w-full text-sm text-neutral-400 bg-transparent border-0 border-b border-neutral-600 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required
                 />
                 <label
-                  htmlFor="floating_repeat_password"
+                  htmlFor="budget"
                   className="peer-focus:font-medium absolute text-sm  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Budget{" "}
@@ -174,7 +180,13 @@ const Contact = () => {
                 type="submit"
                 className="w-full md:w-[250px] bg-[#28E98C] rounded-full py-3 text-black text-lg hover:bg-transparent hover:border-[#28E98C] border-[#28E98C] border-2 hover:text-[#28E98C] transition-colors duration-300 flex items-center gap-2 justify-center"
               >
-                <GrSend /> <span className="uppercase">Send Message</span>
+                {loading ? (
+                  <TbFidgetSpinner className="m-auto animate-spin h-6 w-6" />
+                ) : (
+                  <>
+                    <GrSend /> <span className="uppercase">Send Message</span>
+                  </>
+                )}
               </button>
             </form>
           </div>

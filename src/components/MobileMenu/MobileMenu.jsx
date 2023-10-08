@@ -1,8 +1,8 @@
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { BiGridVertical, BiLogoLinkedin } from "react-icons/bi";
+import { BiGridVertical, BiLogoDevTo, BiLogoLinkedin } from "react-icons/bi";
 import { BsBriefcase, BsDribbble, BsGithub, BsTwitter } from "react-icons/bs";
 import { FaBarsStaggered } from "react-icons/fa6";
-import { LiaShapesSolid } from "react-icons/lia";
+import { LiaFacebookF, LiaShapesSolid } from "react-icons/lia";
 import { IoMailOutline } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { Link as ScrollLink } from "react-scroll";
@@ -102,24 +102,42 @@ const MobileMenu = ({ openMenu, toggleMenu }) => {
         <div className="my-14">
           <h4 className="text-gray-400 text-lg my-5">Social</h4>
           <div className="flex gap-5 items-center text-gray-400">
-            <Link>
-              <button className="hover:text-[#28E98C] transition">
-                <BsTwitter size={14} />
+            <Link
+              to="https://www.facebook.com/mohammedakhtar07/"
+              target="_blank"
+            >
+              <button
+                className="
+               hover:text-[#28E98C] transition hover:scale-150 duration-300"
+              >
+                <LiaFacebookF size={14} />
               </button>
             </Link>
-            <Link>
-              <button className="hover:text-[#28E98C] transition">
+            <Link
+              to="https://www.linkedin.com/in/mohammedakhtar7/"
+              target="_blank"
+            >
+              <button
+                className="
+               hover:text-[#28E98C] transition hover:scale-150 duration-300"
+              >
                 <BiLogoLinkedin size={14} />
               </button>
             </Link>
-            <Link>
-              <button className="hover:text-[#28E98C] transition">
+            <Link to="https://github.com/Wixden" target="_blank">
+              <button
+                className="
+               hover:text-[#28E98C] transition hover:scale-150 duration-300"
+              >
                 <BsGithub size={14} />
               </button>
             </Link>
-            <Link>
-              <button className="hover:text-[#28E98C] transition">
-                <BsDribbble size={14} />
+            <Link to="https://dev.to/wixden" target="_blank">
+              <button
+                className="
+               hover:text-[#28E98C] transition hover:scale-150 duration-300"
+              >
+                <BiLogoDevTo size={14} />
               </button>
             </Link>
           </div>

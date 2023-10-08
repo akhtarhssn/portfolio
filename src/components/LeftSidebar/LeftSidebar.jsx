@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-import { BsDribbble, BsGithub, BsTwitter } from "react-icons/bs";
-import { BiLogoDevTo, BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
+import { BsGithub } from "react-icons/bs";
+import { BiLogoDevTo, BiLogoLinkedin } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
-import { FaFacebookF } from "react-icons/fa6";
 import { LiaFacebookF } from "react-icons/lia";
 
 const LeftSidebar = () => {
@@ -39,7 +38,7 @@ const LeftSidebar = () => {
           <div className="flex gap-2 items-center text-gray-400 mb-[30px] justify-center">
             <Link
               to="https://www.facebook.com/mohammedakhtar07/"
-              target="_bland"
+              target="black"
             >
               <button className="border-2 border-gray-600 rounded-full hover:border-[#28E98C] hover:text-[#28E98C] transition p-3">
                 <LiaFacebookF size={20} />
@@ -47,18 +46,18 @@ const LeftSidebar = () => {
             </Link>
             <Link
               to="https://www.linkedin.com/in/mohammedakhtar7/"
-              target="_bland"
+              target="black"
             >
               <button className="border-2 border-gray-600 rounded-full hover:border-[#28E98C] hover:text-[#28E98C] transition p-3">
                 <BiLogoLinkedin size={20} />
               </button>
             </Link>
-            <Link to="https://github.com/Wixden" target="_bland">
+            <Link to="https://github.com/Wixden" target="black">
               <button className="border-2 border-gray-600 rounded-full hover:border-[#28E98C] hover:text-[#28E98C] transition p-3">
                 <BsGithub size={20} />
               </button>
             </Link>
-            <Link to="https://dev.to/wixden" target="_bland">
+            <Link to="https://dev.to/wixden" target="black">
               <button className="border-2 border-gray-600 rounded-full hover:border-[#28E98C] hover:text-[#28E98C] transition p-3">
                 <BiLogoDevTo size={20} />
               </button>
