@@ -18,7 +18,7 @@ const LeftSidebar = () => {
         </div>
         <div className="mb-12 flex justify-center">
           <img
-            src="https://i.ibb.co/dMR0BZH/Whats-App-Image-2023-06-23-at-00-36-33.jpg"
+            src="https://i.ibb.co/TgXmM59/Akhtar-Hussain.jpg"
             alt="Portfolio User image"
             className="rounded-[30px] h-[550px] xl:h-[220px] xl:w-[300px] w-full object-cover xl:object-center"
           />
