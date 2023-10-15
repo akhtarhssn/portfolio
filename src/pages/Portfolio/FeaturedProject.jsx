@@ -14,9 +14,9 @@ const FeaturedProject = () => {
           rel="noopener noreferrer"
         >
           <img
-            className="rounded-3xl object-cover object-top max-h-[400px] w-full"
-            src="https://i.ibb.co/RY3MFXw/soul-sync-short.png"
-            alt="Kiddie Corner website project image"
+            className="rounded-3xl object-cover object-center max-h-[400px] w-full"
+            src="https://i.ibb.co/ZSS0ztz/Soul-Sync.png"
+            alt="Soul-Sync website project image"
           />
           {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-3xl"></div> */}
           <div className="text-xs text-black flex gap-4 absolute bottom-5 left-5 group-hover:text-white duration-100">

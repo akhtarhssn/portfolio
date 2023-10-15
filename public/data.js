@@ -73,7 +73,7 @@ export const skills = [
 export const projects = [
   {
     _id: 1,
-    thumbnail: "https://i.ibb.co/h1J4TvW/kiddie-corner.png",
+    thumbnail: "https://i.ibb.co/phjWGPk/Toy-Stars.png",
     projectUrl: "https://kiddie-corner-client.firebaseapp.com/",
     websiteName: "Kiddie Corner",
     technologies: ["React", "Express.js", "MongoDB"],
@@ -82,7 +82,7 @@ export const projects = [
   },
   {
     _id: 2,
-    thumbnail: "https://i.ibb.co/rpKCgn4/chef-recipe-hunter-short.png",
+    thumbnail: "https://i.ibb.co/Vjprrkf/Chef-Recipe.png",
     projectUrl: "https://chef-recipe-hunter-b7a10.web.app/",
     websiteName: "Chef-Recipe Hunter",
     technologies: ["React", "Express.js"],
@@ -91,7 +91,7 @@ export const projects = [
   },
   {
     _id: 3,
-    thumbnail: "https://i.ibb.co/mCM1VZw/personal-portfolio.png",
+    thumbnail: "https://i.ibb.co/FBp5V9X/Wixden-Portfolio.png",
     projectUrl: "https://wixdenportfolio.vercel.app",
     websiteName: "Wixden Portfolio",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -100,7 +100,7 @@ export const projects = [
   },
   {
     _id: 4,
-    thumbnail: "https://i.ibb.co/VM8nrBd/preview.png",
+    thumbnail: "https://i.ibb.co/MhHZ624/Food-Lover.png",
     projectUrl: "https://foodlover.vercel.app",
     websiteName: "Food Lover",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -109,7 +109,7 @@ export const projects = [
   },
   {
     _id: 5,
-    thumbnail: "https://i.ibb.co/R2JmgkX/portfolio.pngg",
+    thumbnail: "https://i.ibb.co/kh2ffBS/Personal-Portfolio.png",
     projectUrl: "https://myportfolio5.vercel.app/",
     websiteName: "My Portfolio",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -118,7 +118,7 @@ export const projects = [
   },
   {
     _id: 6,
-    thumbnail: "https://i.ibb.co/Kh0Bwhh/aircnc-short.png",
+    thumbnail: "https://i.ibb.co/gWD7z3r/Air-CNC.png",
     projectUrl: "https://aircnc-part-01.web.app/",
     websiteName: "Air CNC",
     technologies: ["React", "Express.js", "MongoDB"],
@@ -127,7 +127,7 @@ export const projects = [
   },
   {
     _id: 7,
-    thumbnail: "https://i.ibb.co/JKWshW3/dream-job-short.png",
+    thumbnail: "https://i.ibb.co/chRwvHz/Dream-Job.png",
     projectUrl: "https://dreamjob-a9.netlify.app/",
     websiteName: "Dream Job",
     technologies: ["React", "Express.js", "MongoDB"],
