@@ -31,7 +31,7 @@ const Home = () => {
         <div className="p-5 xl:p-0 z-10">
           <LeftSidebar />
         </div>
-        <main className="flex-grow">
+        <div className="flex-grow">
           <Hero />
           <About />
           <Resume />
@@ -39,7 +39,7 @@ const Home = () => {
           <Skills />
           <Portfolio />
           <Contact />
-        </main>
+        </div>
         <RightSidebar />
         {/* Mobile Menu */}
         <div className="absolute xl:right-6 xl:top-20 top-5 ml-6 xl:ml-0">
