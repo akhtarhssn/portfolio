@@ -7,7 +7,7 @@ import TimelineItem from "../../components/Timeline/TimelineItem";
 const Resume = () => {
   const title = (
     <>
-      Education &<span className="text-[#28E98C]">Experience</span>
+      Education & <span className="text-[#28E98C]">Experience</span>
     </>
   );
   return (
@@ -16,6 +16,17 @@ const Resume = () => {
         {/* margin to right */}
         <SectionContainer>
           <SectionHeader title={title} name={"resume"} Icon={Icon} />
+          <Timeline animation={"fade-right"}>
+            <TimelineItem
+              date={"2023 - Present"}
+              title={"Web Developer"}
+              subTitle={"Freelance - Studio Retainer"}
+            />
+            <TimelineItem
+              title={"Front-End Web Developer"}
+              subTitle={"Freelance - Fiverr"}
+            />
+          </Timeline>
           <Timeline animation={"fade-right"}>
             <TimelineItem
               date={"2019 - Present"}

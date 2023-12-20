@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import soulSync from "../../assets/images/projects/Soul-Sync.png";
+import loading from "../../assets/loading.png";
 
-const FeaturedProject = () => {
+const FeaturedProject = ({ imageLoaded, setImageLoaded }) => {
   return (
     <div
       className="group cursor-pointer mb-8"
@@ -15,8 +17,10 @@ const FeaturedProject = () => {
         >
           <img
             className="rounded-3xl object-cover object-center max-h-[400px] w-full"
-            src="https://i.ibb.co/ZSS0ztz/Soul-Sync.png"
+            src={imageLoaded ? soulSync : loading}
             alt="Soul-Sync website project image"
+            data-src={soulSync}
+            onLoad={() => setImageLoaded(true)}
           />
           {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-3xl"></div> */}
           <div className="text-xs text-black flex gap-4 absolute bottom-5 left-5 group-hover:text-white duration-100">

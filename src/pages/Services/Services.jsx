@@ -3,7 +3,7 @@ import Container from "../../components/Container/Container";
 import SectionContainer from "../../components/Container/SectionContainer";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import ServicesCard from "../../components/ServicesCard/ServicesCard";
-import { services } from "../../../public/data";
+import { data } from "../../../public/data";
 
 const Services = () => {
   const title = (
@@ -23,7 +23,7 @@ const Services = () => {
             Icon={FaBarsStaggered}
           />
           {/* Services */}
-          {services.map((service) => (
+          {data.services.map((service) => (
             <ServicesCard key={service.serviceName} services={service} />
           ))}
           {/* Services END */}

@@ -14,7 +14,7 @@ const SectionHeader = ({ name, Icon, title }) => {
       </div>
       {/* Title */}
       <h2
-        className={`md:text-[48px]  text-[38px] font-inter font-light text-white my-8`}
+        className={`md:text-[48px] text-[38px] font-inter text-white my-8`}
         data-aos="fade-up"
         data-aos-duration="1100"
       >

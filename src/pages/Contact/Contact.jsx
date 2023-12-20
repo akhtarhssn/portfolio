@@ -7,11 +7,13 @@ import { GrSend } from "react-icons/gr";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import { TbFidgetSpinner } from "react-icons/tb";
+import CelebrationModal from "../../components/CelebrationModal/CelebrationModal";
 
 const Contact = () => {
   const form = useRef();
 
   const [loading, setLoading] = useState(false);
+  const [celebration, setCelebration] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -28,6 +30,7 @@ const Contact = () => {
         () => {
           setLoading(false);
           toast.success("Mail Sent Successfully");
+          setCelebration(true);
         },
         (error) => {
           toast.warning(error.message);
@@ -43,7 +46,11 @@ const Contact = () => {
   );
 
   return (
-    <section className="py-[90px] overflow-hidden relative" id="contact">
+    <section className="pt-[90px] overflow-hidden relative" id="contact">
+      <CelebrationModal
+        celebration={celebration}
+        setCelebration={setCelebration}
+      />
       <Container>
         <SectionContainer>
           <SectionHeader title={title} name={"contact"} Icon={IoMailOutline} />

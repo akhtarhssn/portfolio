@@ -19,7 +19,7 @@ const Home = () => {
   };
   return (
     <>
-      <div className="xl:flex items-end justify-center font-inter">
+      <div className="md:flex justify-center font-inter">
         {/* Overlay */}
         {openMenu && (
           <div
@@ -42,7 +42,7 @@ const Home = () => {
         </div>
         <RightSidebar />
         {/* Mobile Menu */}
-        <div className="absolute xl:right-6 xl:top-20 top-5 ml-6 xl:ml-0">
+        <div className="absolute md:right-20 xl:right-6 xl:top-20 top-5 ml-6 xl:ml-0">
           <MobileMenuIcon toggleMenu={toggleMenu} />
         </div>
       </div>

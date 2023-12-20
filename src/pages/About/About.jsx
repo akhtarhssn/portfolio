@@ -7,7 +7,7 @@ const About = () => {
   const title = (
     <>
       Unlock Limitless Possibilities with
-      <span className="text-[#28E98C]">Wixden</span>
+      <span className="text-[#28E98C]"> Akhtar Hussain</span>
     </>
   );
 

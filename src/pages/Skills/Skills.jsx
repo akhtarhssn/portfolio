@@ -3,8 +3,8 @@ import Container from "../../components/Container/Container";
 import SectionContainer from "../../components/Container/SectionContainer";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import { LiaShapesSolid } from "react-icons/lia";
-import { skills } from "../../../public/data";
 import SkillBox from "../../components/SkillBox/SkillBox";
+import { data } from "../../../public/data";
 
 const Skills = () => {
   const title = (
@@ -20,7 +20,7 @@ const Skills = () => {
           <SectionHeader title={title} name={"skills"} Icon={LiaShapesSolid} />
           {/* Skills */}
           <div className="flex items-center flex-wrap gap-5">
-            {skills.map((skill) => (
+            {data.skills.map((skill) => (
               <SkillBox
                 key={skill.image}
                 skill={skill}

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import loading from "../../assets/loading.png";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, imageLoaded, setImageLoaded }) => {
   const { thumbnail, projectUrl, websiteName, title, technologies, animation } =
     project;
   return (
@@ -16,6 +17,8 @@ const ProjectCard = ({ project }) => {
               className="rounded-3xl object-cover object-top min-h-[370px] max-h-[400px] w-full transition-transform transform-gpu"
               src={thumbnail}
               alt={`${websiteName} website project image`}
+              data-src={imageLoaded ? thumbnail : loading}
+              onLoad={() => setImageLoaded(true)}
             />
           </div>
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 rounded-3xl"></div>

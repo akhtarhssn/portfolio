@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SectionContainer from "../../components/Container/SectionContainer";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import { BiGridVertical } from "react-icons/bi";
 import Container from "../../components/Container/Container";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import { projects } from "../../../public/data";
 import FeaturedProject from "./FeaturedProject";
+import { data } from "../../../public/data";
 
 const Portfolio = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
   const title = (
     <>
       My Featured <span className="text-[#28E98C]">Projects</span>
@@ -24,14 +25,22 @@ const Portfolio = () => {
             name={"portfolio"}
             Icon={BiGridVertical}
           />
-          <FeaturedProject />
+          <FeaturedProject
+            imageLoaded={imageLoaded}
+            setImageLoaded={setImageLoaded}
+          />
           <div
-            className="grid md:grid-cols-2 gap-8"
+            className="grid grid-cols-1 xl:grid-cols-2 gap-8"
             data-aos="fade-up"
             data-aos-duration="1100"
           >
-            {projects.map((project) => (
-              <ProjectCard key={project?._id} project={project} />
+            {data.projects.map((project) => (
+              <ProjectCard
+                key={project?._id}
+                project={project}
+                imageLoaded={imageLoaded}
+                setImageLoaded={setImageLoaded}
+              />
             ))}
           </div>
         </SectionContainer>

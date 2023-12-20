@@ -1,8 +1,16 @@
 import { LiaBezierCurveSolid } from "react-icons/lia";
 import { BsCodeSlash } from "react-icons/bs";
 import { RxPencil2 } from "react-icons/rx";
+import airCnc from "../src/assets/images/projects/Air-CNC.png";
+import recipe from "../src/assets/images/projects/Chef-Recipe.png";
+import dreamJob from "../src/assets/images/projects/Dream-Job.png";
+import food from "../src/assets/images/projects/Food-Lover.png";
+import personal from "../src/assets/images/projects/Personal-Portfolio.png";
+import toys from "../src/assets/images/projects/Toy-Stars.png";
+import portfolio from "../src/assets/images/projects/Wixden-Portfolio.png";
+// import second from "../src/assets/images/projects";
 
-export const services = [
+const services = [
   {
     serviceName: "website design",
     ServiceIcon: LiaBezierCurveSolid,
@@ -31,11 +39,31 @@ export const services = [
   },
 ];
 
-export const skills = [
+const skills = [
   {
     image: "https://i.ibb.co/prjPffT/html.png",
     name: "html",
     animation: "fade-down-right",
+  },
+  {
+    image: "https://i.ibb.co/HCFxbgB/css-logo.png",
+    name: "CSS",
+    animation: "fade-down",
+  },
+  {
+    image: "https://i.ibb.co/7yrg4dt/js-logo.png",
+    name: "JavaScript",
+    animation: "fade-down-left",
+  },
+  {
+    image: "https://i.ibb.co/RS6g0ng/tailwind.png",
+    name: "tailwind",
+    animation: "fade-down-right",
+  },
+  {
+    image: "https://i.ibb.co/qj7V4ps/bootstrap.png",
+    name: "bootstrap",
+    animation: "fade-up-right",
   },
   {
     image: "https://i.ibb.co/yV22CFr/react.png",
@@ -48,7 +76,17 @@ export const skills = [
     animation: "fade-up",
   },
   {
-    image: "https://i.ibb.co/Y0ysDvd/figma.png",
+    image: "https://i.ibb.co/Z698KVL/express.png",
+    name: "express",
+    animation: "fade-left",
+  },
+  {
+    image: "https://i.ibb.co/q0JHnqr/firebase.png",
+    name: "firebase",
+    animation: "fade-up",
+  },
+  {
+    image: "https://i.ibb.co/hV4wCgd/figma.png",
     name: "figma",
     animation: "fade-down-left",
   },
@@ -70,10 +108,10 @@ export const skills = [
   },
 ];
 
-export const projects = [
+const projects = [
   {
     _id: 1,
-    thumbnail: "https://i.ibb.co/phjWGPk/Toy-Stars.png",
+    thumbnail: toys,
     projectUrl: "https://kiddie-corner-client.firebaseapp.com/",
     websiteName: "Kiddie Corner",
     technologies: ["React", "Express.js", "MongoDB"],
@@ -82,7 +120,7 @@ export const projects = [
   },
   {
     _id: 2,
-    thumbnail: "https://i.ibb.co/Vjprrkf/Chef-Recipe.png",
+    thumbnail: recipe,
     projectUrl: "https://chef-recipe-hunter-b7a10.web.app/",
     websiteName: "Chef-Recipe Hunter",
     technologies: ["React", "Express.js"],
@@ -91,7 +129,7 @@ export const projects = [
   },
   {
     _id: 3,
-    thumbnail: "https://i.ibb.co/FBp5V9X/Wixden-Portfolio.png",
+    thumbnail: portfolio,
     projectUrl: "https://wixdenportfolio.vercel.app",
     websiteName: "Wixden Portfolio",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -100,7 +138,7 @@ export const projects = [
   },
   {
     _id: 4,
-    thumbnail: "https://i.ibb.co/MhHZ624/Food-Lover.png",
+    thumbnail: food,
     projectUrl: "https://foodlover.vercel.app",
     websiteName: "Food Lover",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -109,7 +147,7 @@ export const projects = [
   },
   {
     _id: 5,
-    thumbnail: "https://i.ibb.co/kh2ffBS/Personal-Portfolio.png",
+    thumbnail: personal,
     projectUrl: "https://myportfolio5.vercel.app/",
     websiteName: "My Portfolio",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -118,7 +156,7 @@ export const projects = [
   },
   {
     _id: 6,
-    thumbnail: "https://i.ibb.co/gWD7z3r/Air-CNC.png",
+    thumbnail: airCnc,
     projectUrl: "https://aircnc-part-01.web.app/",
     websiteName: "Air CNC",
     technologies: ["React", "Express.js", "MongoDB"],
@@ -127,7 +165,7 @@ export const projects = [
   },
   {
     _id: 7,
-    thumbnail: "https://i.ibb.co/chRwvHz/Dream-Job.png",
+    thumbnail: dreamJob,
     projectUrl: "https://dreamjob-a9.netlify.app/",
     websiteName: "Dream Job",
     technologies: ["React", "Express.js", "MongoDB"],
@@ -135,3 +173,9 @@ export const projects = [
     animation: "fade-up-left",
   },
 ];
+
+export const data = {
+  services,
+  skills,
+  projects,
+};
